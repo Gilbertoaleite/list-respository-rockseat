@@ -4,7 +4,7 @@
 	padding: 0 2rem;
 	background-color: #333;
 	color: #fff;
-	font: 16px "Helvetica Neue", Arial, sans-serif;
+	font: 16px 'Helvetica Neue', Arial, sans-serif;
 }
 
 .main {
@@ -19,7 +19,30 @@
 
 	h1 {
 		font-size: 80px;
+		margin-bottom: 16px;
 	}
+	ul{
+		list-style: none;
+
+		li{
+			& + li{
+				margin-top: 20px;	
+				}
+				p{
+					font-size: 14px;
+					color: #444;
+					margin-top: 8px;
+
+				}
+				a{
+					display: inline-block;
+					margin-top: 16px;
+					text-decoration: none;
+					color: #8257e6;
+				}
+			}
+		}
+	
 }
 
 .footer {
@@ -112,8 +135,6 @@
 	font-size: 1.25rem;
 	line-height: 1.5;
 }
-
-
 
 .logo {
 	height: 1em;
